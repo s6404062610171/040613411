@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form pattern atttibutes testing</h1>
+    <hr>
+    <form action = "form-echo.php" method="post">
+        Slide 33 Example :
+        <input
+            type="text"
+            name="์Example"
+            pattern="[a-z-A-Z]{1,15}"
+            placeholder="aaaa"
+            >
+    <h2>1. เป็นสระในภาษาอังกฤษเท่านั้นและมีได้ 3 ตัว</h2>
+    <input
+            type="text"
+            name="No.1"
+            pattern="[aeiouAEIOU]{3}"
+            placeholder="english only"
+            >
+    <h2>2. ขึ้นต้นด้วยพิมพ์ใหญ่ ที่เหลือเป็นอังษรพิมพ์เล็กตั้งแต่ 1 ตัวขึ้นไป</h2>
+    <input
+            type="text"
+            name="No.2"
+            pattern="[A-Z][a-z]+"
+            placeholder="Xx"
+            >
+    <h2>3. ขึ้นต้นด้วย ord หรือ order ลงท้ายด้วยตัวเลข 5 ตัว </h2>
+    <input
+            type="text"
+            name="No.3"
+            pattern="(ord|order)[0-9]{5}"
+            placeholder="ord/ordernnnnn"
+            >
+    <h2>4. เป็นคำว่า frog หรือ blog หรือ clog เท่านั้น</h2>
+    <input
+            type="text"
+            name="No.4"
+            pattern="[fbc][rl]og"
+            placeholder="flog/blog/clog"
+            >
+    <h2>BONUS.เป็นรหัสนักศึกษา cs เท่านั้น</h2>
+    <input
+            type="text"
+            name="No.5"
+            pattern="[0-9]{2}-040626{6}-[0-9]{4}-[0-9]{1}"
+            placeholder="xx-xxxxxx-xxxx-x"
+
+            >
+            <input type="submit" value="Submit">
+            </form>
+  
+</body>
+</html>
