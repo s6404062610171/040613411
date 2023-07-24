@@ -7,21 +7,63 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="form-echo.php" >
-        <input 
-        tyoe="text"
-        name="username"
-        placeholder="Username"
-        pattern="[a-z]{1,15}"
-        title="Username should only contain lowercase letters. e.g. john">
+    <h3>แบบฟอร์มจองทัวร์</h3>
+    <form>
+        <fieldset>
+            <legend>ข้อมูลทั่วไป</legend>
+            <label for="fname">ชื่อ-สกุล:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="กรอกชื่อสกุล" pattern="[a-z]{5,100}"> &#9679;<br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter email"> &#9679;<br>
+            <label for="phonenumber">โทรศัพท์:</label><br>
+            <input type="tel" id="phonenumber" name="phonenumber" placeholder="กรอกหมายเลขโทรศัพท์" value="+66"> &#9679;<br>
+            <label for="address">ที่อยู่:</label><br>
+            <textarea id="address" name="address" placeholder="กรอกที่อยู่" cols="30" rows="3"></textarea><br>
+            <label for="zipcode">รหัสไปรษณีย์:</label>
+            <input type="text" id="zipcode" name="zipcode" size="3" pattern="[0-9]{5}" placeholder="xxxxx" title="Please enter 5 numbers"><br>
+            <label for="avatar">รูปผู้จอง:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/jpg, image/png">
+        </fieldset>
 
-        <input 
-        tyoe="text"
-        name="ID"
-        placeholder="ID"
-        pattern="[a-z]{1,15}"
-        title="Username should only contain lowercase letters. e.g. john">
-        <input type="submit" value="Submit">
+        <fieldset>
+            <legend>ข้อมูลเข้าสู่ระบบ</legend>
+            <label for="username">Username :</label><br>
+            <input type="text" id="username" name="username" pattern="[\w_]{8,}" placeholder="Enter username"><br>
+            <label><i>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป</i></label><br><br>
+            <label for="password">Password :</label><br>
+            <input type="password" id="password" name="password" pattern="[\w_]{8,}" placeholder="Enter password"><br>
+            <label><i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i></label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+            <label for="packet">แพ็คเก็จทัวร์ :</label>
+            <select>
+                <option>--select--</option>
+                <option value="อเมริกา">อเมริกา</option>
+                <option value="อังกฤษ">อังกฤษ</option>
+                <option value="จีน">จีน</option>
+                <option value="ญี่ปุ่น">ญี่ปุ่น</option>
+                <option value="พม่า">พม่า</option>
+            </select><br>
+            <label>วันที่เดินทาง :</label>
+            <input type="datetime-local"><br>
+            <label>จำนวนผู้เดินทาง :</label>
+            <input size="4" type="text" pattern="[\d]|10|M"><br> 
+            <label>เน้นการท่องเที่ยวแบบใด?</label><br>
+            <input type="checkbox">
+            <label>ชอปปิ้ง</label><br>
+            <input type="checkbox">
+            <label>ธรรมชาติ</label><br>
+            <input type="checkbox">
+            <label>ทะเล</label>
+        </fieldset>
+        <label>ยอมรับเงื่อนไขและข้อตกลง</label>
+        <input type="radio" name="condition" value="Iagree">
+        <label>I agree</label>
+        <input type="radio" name="condition" value="Idisagree">
+        <label>I disagree</label>
+        <input type="submit" value="จอง" >
     </form>
     
 </body>
