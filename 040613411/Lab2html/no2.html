@@ -12,33 +12,33 @@
         <fieldset>
             <legend>ข้อมูลทั่วไป</legend>
             <label for="fname">ชื่อ-สกุล:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="กรอกชื่อสกุล" pattern="[a-z]{5,100}"> &#9679;<br>
+            <input type="text" id="fname" name="fname" placeholder="กรอกชื่อสกุล" pattern="[a-z]{5,100}" required> &#9679;<br>
             <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter email"> &#9679;<br>
+            <input type="email" id="email" name="email" placeholder="Enter email" required> &#9679;<br>
             <label for="phonenumber">โทรศัพท์:</label><br>
-            <input type="tel" id="phonenumber" name="phonenumber" placeholder="กรอกหมายเลขโทรศัพท์" value="+66"> &#9679;<br>
+            <input type="tel" id="phonenumber" name="phonenumber" placeholder="กรอกหมายเลขโทรศัพท์" value="+66" required> &#9679;<br>
             <label for="address">ที่อยู่:</label><br>
-            <textarea id="address" name="address" placeholder="กรอกที่อยู่" cols="30" rows="3"></textarea><br>
+            <textarea id="address" name="address" placeholder="กรอกที่อยู่" cols="30" rows="3" required></textarea><br>
             <label for="zipcode">รหัสไปรษณีย์:</label>
-            <input type="text" id="zipcode" name="zipcode" size="3" pattern="[0-9]{5}" placeholder="xxxxx" title="Please enter 5 numbers"><br>
+            <input type="text" id="zipcode" name="zipcode" size="3" pattern="[0-9]{5}" placeholder="xxxxx" title="Please enter 5 numbers" required><br>
             <label for="avatar">รูปผู้จอง:</label>
-            <input type="file" id="avatar" name="avatar" accept="image/jpg, image/png">
+            <input type="file" id="avatar" name="avatar" accept="image/jpg, image/png" required>
         </fieldset>
 
         <fieldset>
             <legend>ข้อมูลเข้าสู่ระบบ</legend>
             <label for="username">Username :</label><br>
-            <input type="text" id="username" name="username" pattern="[\w_]{8,}" placeholder="Enter username"><br>
+            <input type="text" id="username" name="username" pattern="[\w_]{8,}" placeholder="Enter username" required><br>
             <label><i>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป</i></label><br><br>
             <label for="password">Password :</label><br>
-            <input type="password" id="password" name="password" pattern="[\w_]{8,}" placeholder="Enter password"><br>
+            <input type="password" id="password" name="password" pattern="[\w_]{8,}" placeholder="Enter password" required><br>
             <label><i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i></label><br><br>
         </fieldset>
 
         <fieldset>
             <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
             <label for="packet">แพ็คเก็จทัวร์ :</label>
-            <select>
+            <select required>
                 <option>--select--</option>
                 <option value="อเมริกา">อเมริกา</option>
                 <option value="อังกฤษ">อังกฤษ</option>
@@ -49,7 +49,7 @@
             <label>วันที่เดินทาง :</label>
             <input type="datetime-local"><br>
             <label>จำนวนผู้เดินทาง :</label>
-            <input size="4" type="text" pattern="[\d]|10|M"><br> 
+            <input size="4" type="text" pattern="[\d]|10|M" required><br> 
             <label>เน้นการท่องเที่ยวแบบใด?</label><br>
             <input type="checkbox">
             <label>ชอปปิ้ง</label><br>
@@ -59,11 +59,11 @@
             <label>ทะเล</label>
         </fieldset>
         <label>ยอมรับเงื่อนไขและข้อตกลง</label>
-        <input type="radio" name="condition" value="Iagree">
+        <input type="radio" name="condition" value="Iagree" required>
         <label>I agree</label>
-        <input type="radio" name="condition" value="Idisagree">
+        <input type="radio" name="condition" value="Idisagree" required>
         <label>I disagree</label>
-        <input type="submit" value="จอง" >
+        <input type="submit" value="จอง" required >
     </form>
     
 </body>
