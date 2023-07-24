@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<a lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>no3</title>
+    <title>Document</title>
 </head>
 <body>
     <h1>เข้าสู่ระบบ</h1>
-    <tr>
-        <form method="post" action="">
-            <td>
-                <input type="text" name="job_num">
-            </td>
+    <table border ="3" bordercolor="">
+          <tr>
+            <td>Username</td>
+            <td><input autofocus="autofocus" type="username" name="username" pattern="[\w]{8,}" required></td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" pattern="[\w]{8,}" required></td>
+          </tr>
+            <td>กรุณาพิมพ์ตามตัวเลขที่ปรากฎ:<br>1559 <br><input type="text" name="approve" pattern="(1559)" required></td>
+    </table>
+    <input type="image" id="image" alt="Login" src="https://static.vecteezy.com/system/resources/previews/016/177/870/non_2x/login-buttons-sign-label-speech-login-vector.jpg" width="300" height="200">
     
-            <td>
-                <input type="text" name="desc">
-            </td>
-        </form>
-    </tr>
 </body>
 </html>
