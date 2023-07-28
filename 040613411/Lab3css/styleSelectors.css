@@ -1,0 +1,29 @@
+h1 cite{
+    color: red;
+}
+/* .chapter > p::first-line {
+    color: blueviolet;
+    font-family: serif;
+    
+} */
+/* .chapter > p::first-letter{
+    font-size: 170%;
+    font-weight: 200%;
+} */
+p:nth-child(2)::first-letter{
+    font-size: 170%;
+    font-weight: 150%;
+}
+.chapter > p{
+    font-weight:bold;
+}
+.country {
+    color: green;
+}
+#ellipsesParagraph{
+    border-bottom: 1px solid black;
+    padding: 1rem;
+}
+#ellipsesParagraph p {
+    padding: -1rem;
+}
