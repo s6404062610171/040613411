@@ -24,6 +24,3 @@ p:nth-child(2)::first-letter{
     border-bottom: 1px solid black;
     padding: 1rem;
 }
-#ellipsesParagraph p {
-    padding: -1rem;
-}
