@@ -1,15 +1,15 @@
-h1 cite{
+/* h1 cite{
     color: red;
 }
 /* .chapter > p::first-line {
     color: blueviolet;
     font-family: serif;
     
-} */
-/* .chapter > p::first-letter{
+} 
+ .chapter > p::first-letter{
     font-size: 170%;
     font-weight: 200%;
-} */
+} 
 p:nth-child(2)::first-letter{
     font-size: 170%;
     font-weight: 150%;
@@ -22,5 +22,63 @@ p:nth-child(2)::first-letter{
 }
 #ellipsesParagraph{
     border-bottom: 1px solid black;
+} */
+*[class~="country"] {
+	font-weight: bold;
+	color: green;
+}
+
+/*
+  Lets make all h1 elements have red text.
+*/
+
+h1 {
+  	color: red;	
+}
+
+/*
+  But lets make chapter headings just be black. This supersedes the style above. Don't
+  worry about how that works just yet.
+*/
+
+section.chapter h1 {
+	color: black;
+}
+
+/*
+  Lets style our link. We will make it blue whether it has been visited or not.
+  Lets also make it a different color when being hovered over.
+*/
+
+a:link, a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: red;
+}
+
+/*
+  Lets do something a little more interesting. Lets make the first letter of the first paragraph
+  of a chapter a larger font size.
+*/
+section.chapter p:first-of-type::first-letter {
+	font-size: 200%;
+}
+
+/*
+  Lets give footer a top border
+*/
+
+footer {
+	border-top: 1px solid black;
+}
+
+/*
+  Lets make the paragraph with the below ID have bold text.
+*/
+
+#ellipsesParagraph {
+	font-weight: bold;
 }
 
