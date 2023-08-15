@@ -4,6 +4,7 @@ body {
 
 .container {
   display: flex;
+  
 }
 
 header,
@@ -25,7 +26,10 @@ header {
 
 aside {
   background-color: rgb(240, 240, 240);
+  
+  
 }
+
 
 section,
 header,

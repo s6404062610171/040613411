@@ -1,0 +1,34 @@
+.container { 
+    display: flex;
+    flex-direction: column; 
+}
+nav{
+    background-color: black;
+    color: white;
+    width: auto;
+    text-align: center;
+ }
+section { 
+    background-color: gainsboro;
+    width: auto; 
+    margin: 0;
+}
+footer { 
+    background-color: cornflowerblue;
+    width: auto;
+ }
+ @media (min-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    nav{
+        width: 30%;
+    }
+    section{
+        width: 60%;
+    }
+    footer{
+        width: 10%;
+    } 
+ }
