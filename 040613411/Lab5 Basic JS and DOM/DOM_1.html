@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         function checkPassword() {
-            // let mod = document.getElementById('errormsg')
-            // mod.innerHTML = 'modddddddd'
-
             let passwordinput1 = document.getElementById('pass1');
             valida_pass1 = passwordinput1.value;
             let passwordinput2 = document.getElementById('pass2');
             valida_pass2 = passwordinput2.value;
+
             if(valida_pass1==valida_pass2){
                 let correct = document.getElementById('errormsg');
                 correct.innerHTML = 'Correct';
+                correct.style.color='green'
             }
             else{
                 let incorrect = document.getElementById('errormsg');
                 incorrect.innerHTML = 'Incorrect';
+                incorrect.style.color='red'
             }
         }
         </script>
