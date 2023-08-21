@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function Changecolor() {
+            let name = document.getElementById('inputname');
+            name.style.color = 'green'
+            let age = document.getElementById('inputage');
+            age.style.color = 'green'
+            let birthdate = document.getElementById('inputbirthdate');
+            birthdate.style.color = 'green'
+        }
+
+    </script>
+</head>
+<body>
+    Name:<input
+    id="inputname" 
+    type="text" 
+    onchange="Changecolor()"> <br>
+    Age:<input 
+    id="inputage"
+    type="text"onchange="Changecolor()"><br>
+    Birthdate:<input 
+    id="inputbirthdate" 
+    type="text"onchange="Changecolor()"><br>
+</body>
+</html>
